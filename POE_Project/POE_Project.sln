@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POE_Project", "POE_Project\POE_Project.csproj", "{D51824C8-50AC-40E6-A380-B3445A3E2033}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TotalCaloriesCheck", "TotalCaloriesCheck\TotalCaloriesCheck.csproj", "{0845981E-4ECE-42F3-BA81-36E6C6B2EFF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D51824C8-50AC-40E6-A380-B3445A3E2033}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D51824C8-50AC-40E6-A380-B3445A3E2033}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D51824C8-50AC-40E6-A380-B3445A3E2033}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D51824C8-50AC-40E6-A380-B3445A3E2033}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0845981E-4ECE-42F3-BA81-36E6C6B2EFF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0845981E-4ECE-42F3-BA81-36E6C6B2EFF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0845981E-4ECE-42F3-BA81-36E6C6B2EFF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0845981E-4ECE-42F3-BA81-36E6C6B2EFF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {26D09AB0-DF16-45A1-8E94-23380A33DAF9}
+	EndGlobalSection
+EndGlobal
