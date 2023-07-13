@@ -1,0 +1,33 @@
+## Project Overview for Console App
+
+The project is a recipe app developed using Visual Studio and C# programming language. It has five files that contain different classes responsible for performing specific tasks.
+
+- **Project:** This class serves as the entry point of the program and is responsible for running it.
+- **Recipe:** The core of the program, this class stores and manipulates recipe data.
+- **Task:** This class gets and captures information from users.
+- **RecipeDescription:** This class stores recipe name and steps values to display the steps based on recipes.
+- **CheckingCalories:** A test that checks if my project can show an error message if the calories exceed 300.
+
+## How to Run the Program
+
+To run the program, follow these steps:
+
+1. Unzip "ST10053561_Venkata Jannatha_PROG6221_Part2" folder by right-clicking on it and selecting "Unzip".
+2. After unzipping, open "POE_Project.sln" file in Visual Studio software.
+3. Once you've opened your solution in Visual Studio, navigate to `Program.cs` file where you will see "//I link here in this program to run Recipe show = new Recipe();" line. 
+4. Simply click on 'Start' button with green arrow at top of IDE window to launch application.
+
+
+### References Used
+Here are some references used while developing this project:
+- Dictionary: https://www.tutorialsteacher.com/csharp/csharp-dictionary
+- TryParse: https://www.tutorialspoint.com/chash-int-tryparse-method
+- List : https://www.tutorialsteacher.com/csharp/csharp-list
+- If list is empty: https://www.techiedelight.com/check-list-is-empty-csharp/
+- Colortext : https://www.tutorialspoint.com/how-to-change-the-foreground-color-of-text-in-chash-console#:~:text=To%20change%20the%20Foreground%20Color%20of%20text,%23.
+- Lectures: Ishmael
+- ChatGpt: Only minor parts of this project
+
+## GitHub Repository Link
+Here is the link to my GitHub repository containing the code for this project:
+https://github.com/VCCT-PROG6221-2023-Grp2/ST10053561-Venkata-Jannatha-PROG6221_POE
