@@ -1,0 +1,9 @@
+Based on the feedback received, I made several changes to improve the functionality and user experience of my recipe app. 
+
+Removing the Recipe option: based on lecture's feedback I remove the "new recipe" option so that user can chose the normal option which is "create a new recipe" which is applicable for creating a new recipe or adding a another recipe
+
+Calories and foodGroup = based on lecture's feedback I added the explanation on calories and food group but I don't understand the storing in the memory because it automatically stores in variable so that is what I believe it is storing.
+
+Unit testing : so based on feedback, I made a simple unit testing but now I can't change it because it already fixed so that's why I can't able to add more values on it
+
+so these are the things I changed based on lecture's feedback

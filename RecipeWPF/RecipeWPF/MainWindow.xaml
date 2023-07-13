@@ -1,0 +1,66 @@
+﻿<Window x:Class="RecipeWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RecipeWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="600">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="210">
+            <TextBlock Text="Menu:" FontSize="24" FontWeight="Bold" Margin="0,0,0,20" HorizontalAlignment="Center" />
+
+            <TextBlock Text="1. New Recipe" Margin="0,0,0,10" FontSize="18" Foreground="DarkBlue" VerticalAlignment="Center">
+                <TextBlock.Effect>
+                    <DropShadowEffect Color="LightBlue" Direction="270" ShadowDepth="3" Opacity="0.8"/>
+                </TextBlock.Effect>
+            </TextBlock>
+            <TextBlock Text="2. Display" Margin="0,0,0,10" FontSize="18" Foreground="DarkGreen">
+                <TextBlock.Effect>
+                    <DropShadowEffect Color="LimeGreen" Direction="270" ShadowDepth="3" Opacity="0.8"/>
+                </TextBlock.Effect>
+            </TextBlock>
+            <TextBlock Text="3. Scale Ingredients" Margin="0,0,0,10" FontSize="18" Foreground="DarkOrange">
+                <TextBlock.Effect>
+                    <DropShadowEffect Color="Orange" Direction="270" ShadowDepth="3" Opacity="0.8"/>
+                </TextBlock.Effect>
+            </TextBlock>
+            <TextBlock Text="4. Reset Quantities" Margin="0,0,0,10" FontSize="18" Foreground="DarkRed">
+                <TextBlock.Effect>
+                    <DropShadowEffect Color="Red" Direction="270" ShadowDepth="3" Opacity="0.8"/>
+                </TextBlock.Effect>
+            </TextBlock>
+            <TextBlock Text="5. Clear Data" Margin="0,0,0,10" FontSize="18" Foreground="DarkSlateGray">
+                <TextBlock.Effect>
+                    <DropShadowEffect Color="Gray" Direction="270" ShadowDepth="3" Opacity="0.8"/>
+                </TextBlock.Effect>
+            </TextBlock>
+            <TextBlock Text="6. Exit" Margin="0,0,0,20" FontSize="18" Foreground="DarkGoldenrod">
+                <TextBlock.Effect>
+                    <DropShadowEffect Color="Gold" Direction="270" ShadowDepth="3" Opacity="0.8"/>
+                </TextBlock.Effect>
+            </TextBlock>
+
+            <Label Content="Enter your choice:" FontSize="18" Foreground="#FF1F1E1E" Background="#FFE4E3E3" Width="197" >
+                <Label.Effect>
+                    <DropShadowEffect Color="LightGray" Direction="270" ShadowDepth="3" Opacity="0.8"/>
+                </Label.Effect>
+            </Label>
+            <TextBox x:Name="txtChoice" Width="115" Margin="0,10,0,20" FontSize="18" Height="36" >
+                <TextBox.Effect>
+                    <DropShadowEffect Color="LightGray" Direction="270" ShadowDepth="3" Opacity="0.8"/>
+                </TextBox.Effect>
+            </TextBox>
+
+            <Button x:Name="SubmitMenu" Content="Submit" Width="120" Margin="0,0,0,20" Background="DodgerBlue" Foreground="White" FontSize="18" Click="Submit_Click" >
+                <Button.Effect>
+                    <DropShadowEffect Color="LightBlue" Direction="270" ShadowDepth="3" Opacity="0.8"/>
+                </Button.Effect>
+            </Button>
+        </StackPanel>
+    </Grid>
+
+
+
+
+</Window>

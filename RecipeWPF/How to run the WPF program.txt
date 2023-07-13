@@ -1,0 +1,25 @@
+##How to run the Program
+
+the zip folder ="ST10053561_Venkata Jannatha_PROG6211_POE_Part 3"
+
+when you unzip the folder you will see the two projects namel
+	--POE_Project
+	--RecipeWPF
+
+for now we will focus on the "RecipeWPF" so when you open the folder
+	--Text document = "Changes I made..."
+	--Text document = "how to run..."
+	-- visual studio = "RecipeWPF.sln"
+
+which you need to double click that it will open the visual studio automatically if not then you need to install the community version of visual studio
+
+when you open it you simple click the Green arrow like "Start" button just click or press F5 to run the program.
+
+for More info I include the document called "How to use my WPF program"
+
+##GitHub Repo: 
+https://github.com/VCCT-PROG6221-2023-Grp2/ST10053561-Venkata-Jannatha-PROG6221_POE
+
+##References:
+some chatGpt for handling issues
+Message box = https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.messagebox?view=windowsdesktop-7.0

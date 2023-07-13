@@ -1,0 +1,142 @@
+﻿<Window x:Class="RecipeWPF.Recipe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Recipe Ingredient Capture" Height="520" Width="550"  BorderBrush="#FF9C8C8C" Foreground="#FFD0C9C9"  >
+
+    <Grid>
+        <Grid.Resources>
+            <Style TargetType="Label">
+                <Setter Property="Margin" Value="10,10,0,0"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="Foreground" Value="#333333"/>
+                <Setter Property="FontSize" Value="16"/>
+            </Style>
+            <Style TargetType="TextBox">
+                <Setter Property="Margin" Value="10,5,10,5"/>
+                <Setter Property="Padding" Value="5"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="BorderThickness" Value="1"/>
+                <Setter Property="BorderBrush" Value="#CCCCCC"/>
+                <Setter Property="Background" Value="#F5F5F5"/>
+                <Setter Property="MinWidth" Value="120"/>
+            </Style>
+            <Style TargetType="ComboBox">
+                <Setter Property="Margin" Value="10,5,10,5"/>
+                <Setter Property="Padding" Value="5"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="BorderThickness" Value="1"/>
+                <Setter Property="BorderBrush" Value="#CCCCCC"/>
+                <Setter Property="Background" Value="#F5F5F5"/>
+                <Setter Property="MinWidth" Value="120"/>
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="Margin" Value="10,10,10,0"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="Background" Value="#0078D7"/>
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="MinWidth" Value="120"/>
+            </Style>
+        </Grid.Resources>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" MinHeight="59" />
+            <RowDefinition Height="Auto" MinHeight="80.923" />
+            <RowDefinition Height="280" />
+            <RowDefinition Height="0.88"/>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" MinHeight="0" />
+            <RowDefinition Height="Auto" MinHeight="41" />
+        </Grid.RowDefinitions>
+
+        <Label Content="Recipe Name:" Height="32" Margin="16,27,397,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <TextBox x:Name="RecipeTextBox" Grid.Row="1" Height="34" Margin="213,26,13,0" VerticalAlignment="Top"/>
+
+        <StackPanel Grid.Row="2" Margin="7,32,13,27">
+            <!-- The following code will be dynamically generated based on the number of ingredients -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Ingredient Name:"/>
+                <TextBox x:Name="IngridentTextBox" Grid.Column="1" Margin="82,0,10,0"/>
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Quantity:"/>
+                <TextBox x:Name="QuantityTextBox" Grid.Column="1" Margin="141,0,10,0"/>
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Calories:"/>
+                <TextBox x:Name="CaloriTextBox" Grid.Column="1" Margin="145,0,10,0"/>
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Food Group:"/>
+                <ComboBox x:Name="comboFoodGroup" Grid.Column="1" Margin="115,0,10,0">
+                    <ComboBoxItem Content="Starchy foods" />
+                    <ComboBoxItem Content="Vegetables and fruits" />
+                    <ComboBoxItem Content="Dry beans, peas, lentils and soya" />
+                    <ComboBoxItem Content="Chicken, fish, meat and eggs" />
+                    <ComboBoxItem Content="Milk and dairy products" />
+                    <ComboBoxItem Content="Fats and oil" />
+                    <ComboBoxItem Content="Water" />
+                </ComboBox>
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Units:"/>
+                <TextBox x:Name="unitTextBox" Grid.Column="1" Margin="161,0,10,0"/>
+            </Grid>
+        </StackPanel>
+
+
+
+        <Button x:Name="submitButton" Grid.Row="8" Height="41" Margin="8,5,12,0" Click="submitButton_Click" VerticalAlignment="Top">
+            Submit
+        </Button>
+
+        <Label Content="Ingredients Capture for Recipe" HorizontalAlignment="Left" Margin="96,0,0,0" Width="364" FontSize="24" Height="42">
+            <Label.Effect>
+                <DropShadowEffect Color="Black" Direction="320" ShadowDepth="2" Opacity="0.5" BlurRadius="4"/>
+            </Label.Effect>
+            <Label.Foreground>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Offset="0" Color="#FF2B2B2B"/>
+                    <GradientStop Offset="1" Color="#FF909090"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+
+
+        <!-- Add more rows and controls as needed -->
+    </Grid>
+
+
+
+
+</Window>
